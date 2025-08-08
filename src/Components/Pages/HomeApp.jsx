@@ -4,7 +4,7 @@ import React from 'react'
 export const HomeApp = () => {
   return (
     <>
-        <Typography variant="h1">Liga Colaboradores Upaep</Typography>
+        <Typography variant='h5' color='error'>Liga Colaboradores Upaep</Typography>
     </>
   )
 }
