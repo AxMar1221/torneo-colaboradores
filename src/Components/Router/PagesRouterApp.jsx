@@ -1,0 +1,21 @@
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { DetallePartidoApp, EstadisticasApp, EstadisticasPartidosApp, HomeApp, TablaGeneralApp } from '../Pages'
+import { PartidoEnVivoApp } from '../Pages/PartidoEnVivoApp'
+
+export const PagesRouterApp = () => {
+  return (
+    <>
+    <Routes>
+        <Route path='home' element={<HomeApp />} />
+        <Route path='/tabla' element={<TablaGeneralApp />} />
+        <Route path='/estadisticas' element={<EstadisticasApp />} />
+        <Route path='/estadisticas-partido' element={<EstadisticasPartidosApp />} />
+        <Route path='/detalles' element={<DetallePartidoApp />} />
+        <Route path='/en-vivo' element={<PartidoEnVivoApp />} />
+
+        <Route path='/*' element={<HomeApp/>} />
+    </Routes>
+    </>
+  )
+}
