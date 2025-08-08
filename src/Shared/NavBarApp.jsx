@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom';
 
 export const NavBarApp = () => {
   return (
-    <div className='container mb-5'>
+    <div className='navbar bg-light-100 container mb-5'>
       <AppBar color='error'>
         <Container>
           <Toolbar
